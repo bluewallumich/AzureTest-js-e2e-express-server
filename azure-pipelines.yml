@@ -17,8 +17,8 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: "JaCoCo"
-    summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
-    reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
+    summaryFileLocation: "$(Build.SourcesDirectory)/**/site/jacoco/jacoco.xml"
+    reportDirectory: "$(Build.SourcesDirectory)/**/site/jacoco"
     failIfCoverageEmpty: true
 - script: |
     npm install
