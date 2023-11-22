@@ -10,10 +10,10 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+#- task: NodeTool@0
+#  inputs:
+#    versionSpec: '10.x'
+#  displayName: 'Install Node.js'
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: "JaCoCo"
